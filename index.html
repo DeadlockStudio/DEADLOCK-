@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEADLOCK — Dark Roblox RPG</title>
+  <meta name="description" content="DEADLOCK — An immersive dark Roblox RPG. Explore worlds, unlock races, master combat, climb leaderboards.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="#home" class="logo">
+          <span class="logo-text">DEADLOCK</span>
+        </a>
+        
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#races">Races</a></li>
+            <li><a href="#combat">Combat</a></li>
+            <li><a href="#codes">Codes</a></li>
+            <li><a href="https://discord.gg/ru4EJtZaUZ" target="_blank" class="btn-discord">Discord</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">COMING TO ROBLOX</div>
+        <h1 class="hero-title">DEADLOCK</h1>
+        <p class="hero-subtitle">Enter a dark realm of exploration, conquest, and legend.</p>
+        <p class="hero-desc">Master unique races • Climb leaderboards • Complete epic questlines • Unlock rare mounts • Dominate combat</p>
+        
+        <div class="hero-buttons">
+          <a href="#features" class="btn btn-primary">Discover Features</a>
+          <a href="https://discord.gg/ru4EJtZaUZ" target="_blank" class="btn btn-secondary">Join Discord</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="hero-box">
+          <div class="placeholder-text">Game Trailer & Art<br>Coming Soon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2 class="section-title">Core Features</h2>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Multi-World Exploration</h3>
+          <p>Discover vast, interconnected worlds filled with secrets, hidden treasures, and dynamic encounters.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">👤</div>
+          <h3>Unique Races</h3>
+          <p>Select from diverse races—Rabbit, Shark, Wolf, and more. Each offers unique stats, abilities, and gameplay styles.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚔️</div>
+          <h3>Skill Mastery</h3>
+          <p>Unlock deep skill trees, craft custom builds, and master combat combos that define your playstyle.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📜</div>
+          <h3>Epic Questlines</h3>
+          <p>Follow immersive storylines with memorable NPCs and meaningful choices that shape your legend.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3>Leaderboards & Factions</h3>
+          <p>Join powerful factions, climb global rankings, and dominate both PvE and competitive modes.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🐴</div>
+          <h3>Mounts & Pets</h3>
+          <p>Discover rare mounts and companion pets that enhance your combat power and grant special abilities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RACES SECTION -->
+  <section id="races" class="races">
+    <div class="container">
+      <h2 class="section-title">Playable Races</h2>
+      <p class="section-desc">Each race defines your journey. Rarity levels and unique traits unlock hidden potential.</p>
+      
+      <div class="races-list">
+        <div class="race-item">
+          <div class="race-header">
+            <h3>Rabbit</h3>
+            <span class="race-rarity rarity-rare">Rare</span>
+          </div>
+          <p>Swift and agile scout. Unmatched evasion and speed make you perfect for hit-and-run tactics and parkour exploration.</p>
+          <div class="race-stats">
+            <span>Speed: ★★★★★</span>
+            <span>Health: ★★☆☆☆</span>
+            <span>Damage: ★★★☆☆</span>
+          </div>
+        </div>
+
+        <div class="race-item">
+          <div class="race-header">
+            <h3>Shark</h3>
+            <span class="race-rarity rarity-epic">Epic</span>
+          </div>
+          <p>Fearsome water-dweller. Master aquatic combat, burst damage, and devastating area-of-effect attacks.</p>
+          <div class="race-stats">
+            <span>Speed: ★★★☆☆</span>
+            <span>Health: ★★★★☆</span>
+            <span>Damage: ★★★★★</span>
+          </div>
+        </div>
+
+        <div class="race-item">
+          <div class="race-header">
+            <h3>Wolf</h3>
+            <span class="race-rarity rarity-rare">Rare</span>
+          </div>
+          <p>Balanced warrior with pack instincts. Gain bonuses when grouped, excellent for team-based gameplay.</p>
+          <div class="race-stats">
+            <span>Speed: ★★★★☆</span>
+            <span>Health: ★★★★☆</span>
+            <span>Damage: ★★★★☆</span>
+          </div>
+        </div>
+
+        <div class="race-item">
+          <div class="race-header">
+            <h3>...and More</h3>
+            <span class="race-rarity rarity-mythic">Mystery</span>
+          </div>
+          <p>Legendary races await discovery. Hidden species with legendary powers are yet to be revealed in the full release.</p>
+          <div class="race-stats">
+            <span>Rarity: ???</span>
+            <span>Power: ★★★★★</span>
+            <span>Unlock: Coming</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMBAT SECTION -->
+  <section id="combat" class="combat">
+    <div class="container">
+      <h2 class="section-title">Combat System</h2>
+      
+      <div class="combat-grid">
+        <div class="combat-card">
+          <h3>Skill Combos</h3>
+          <p>Chain abilities together for devastating combo attacks. Master the timing to unleash your true potential.</p>
+        </div>
+
+        <div class="combat-card">
+          <h3>Stat Customization</h3>
+          <p>Forge your own path with extensive customization. Balance offense, defense, and utility to match your strategy.</p>
+        </div>
+
+        <div class="combat-card">
+          <h3>PvE & PvP Modes</h3>
+          <p>Challenge story dungeons with friends or test your skills in intense player-versus-player battles.</p>
+        </div>
+
+        <div class="combat-card">
+          <h3>Weapon Mastery</h3>
+          <p>Unlock and forge legendary weapons. Each weapon scales uniquely with your race and stats.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CODES SECTION -->
+  <section id="codes" class="codes">
+    <div class="container">
+      <h2 class="section-title">Promo Codes</h2>
+      <p class="section-desc">Exclusive codes unlock rare rewards. Join Discord for first access to new drops.</p>
+      
+      <div class="codes-grid">
+        <div class="code-card code-locked">
+          <div class="code-status">🔒 Locked</div>
+          <div class="code-label">Coming Soon</div>
+        </div>
+
+        <div class="code-card code-locked">
+          <div class="code-status">🔒 Locked</div>
+          <div class="code-label">Coming Soon</div>
+        </div>
+
+        <div class="code-card code-locked">
+          <div class="code-status">🔒 Locked</div>
+          <div class="code-label">Coming Soon</div>
+        </div>
+      </div>
+
+      <div class="codes-note">
+        <p>💡 <strong>Tip:</strong> Follow our <a href="https://discord.gg/ru4EJtZaUZ" target="_blank">Discord server</a> for instant code drops and exclusive giveaways.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Enter DEADLOCK?</h2>
+      <p>Join thousands of players waiting for launch. Get early access, news, and exclusive rewards on Discord.</p>
+      <a href="https://discord.gg/ru4EJtZaUZ" target="_blank" class="btn btn-primary btn-large">Join Discord Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <p class="footer-logo">DEADLOCK</p>
+          <p class="footer-tagline">Built for the darkest adventures</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#races">Races</a></li>
+            <li><a href="#combat">Combat</a></li>
+            <li><a href="#codes">Codes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="https://discord.gg/ru4EJtZaUZ" target="_blank">Discord Server</a></li>
+            <li><a href="https://www.roblox.com" target="_blank">Roblox</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 DEADLOCK Studio. All rights reserved. | Unofficial Roblox game</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
