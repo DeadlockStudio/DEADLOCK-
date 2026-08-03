@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DEADLOCK — Dark Roblox RPG</title>
   <meta name="description" content="DEADLOCK — The raw, brutal Roblox RPG made for players who crave weighty choices, savage combat, and unforgettable moments.">
+
+  <!-- Inline SVG favicon to ensure an icon even if external assets fail -->
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%231a0505%22/><text x=%2250%25%22 y=%2258%25%22 font-size=%2238%22 fill=%22%23d4af37%22 font-family=%22Cinzel,serif%22 font-weight=%22900%22 text-anchor=%22middle%22>DL</text></svg>">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -16,10 +20,11 @@
     <div class="container">
       <div class="header-inner">
         <a href="#home" class="logo" aria-label="DEADLOCK home">
-          <img src="assets/cvqbmsvanhrmy0czqaytntppf4_result_0.png" alt="DEADLOCK logo" class="logo-img" />
+          <!-- Add onerror fallback so logo shows even if asset missing -->
+          <img src="assets/cvqbmsvanhrmy0czqaytntppf4_result_0.png" alt="DEADLOCK logo" class="logo-img" onerror='this.onerror=null;this.src="data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect width=%22200%22 height=%22200%22 fill=%22%231a0505%22/><text x=%2250%25%22 y=%2255%25%22 font-size=%2232%22 fill=%22%23d4af37%22 font-family=%22Cinzel,serif%22 text-anchor=%22middle%22>DEADLOCK</text></svg>";' />
           <span class="logo-text">DEADLOCK</span>
         </a>
-        
+
         <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span>
           <span></span>
@@ -33,7 +38,8 @@
             <li><a href="#races">Races</a></li>
             <li><a href="#combat">Combat</a></li>
             <li><a href="#codes">Codes</a></li>
-            <li><a href="https://discord.gg/ru4EJtZaUZ" target="_blank" class="btn-discord">Discord</a></li>
+            <!-- Shortened label to prevent overflow on smaller viewports -->
+            <li><a href="https://discord.gg/ru4EJtZaUZ" target="_blank" class="btn-discord" title="Discord — Early Access">Discord</a></li>
           </ul>
         </nav>
       </div>
@@ -48,17 +54,19 @@
         <h1 class="hero-title">DEADLOCK</h1>
         <p class="hero-subtitle">A savage, beautiful world where legends are forged in blood and steel.</p>
         <p class="hero-desc">Explore haunted realms • Master brutal combat • Unlock rare races & mounts • Rise to the top of the leaderboards</p>
-        
+
         <div class="hero-buttons">
           <a href="#features" class="btn btn-primary">See What Makes DEADLOCK Legendary</a>
-          <a href="https://discord.gg/ru4EJtZaUZ" target="_blank" class="btn btn-secondary">Join Our Discord — Early Previews</a>
+          <!-- Shortened Discord button label to avoid wrapping/overflow -->
+          <a href="https://discord.gg/ru4EJtZaUZ" target="_blank" class="btn btn-secondary" title="Discord — Early Access">Discord — Early Access</a>
         </div>
       </div>
 
       <div class="hero-visual">
         <div class="hero-glow"></div>
         <div class="hero-box">
-          <img src="assets/cvqbmsvanhrmy0czqaytntppf4_result_0.png" alt="DEADLOCK hero logo" class="hero-logo" />
+          <!-- hero logo fallback as well -->
+          <img src="assets/cvqbmsvanhrmy0czqaytntppf4_result_0.png" alt="DEADLOCK hero logo" class="hero-logo" onerror='this.onerror=null;this.src="data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 200%22><rect width=%22400%22 height=%22200%22 fill=%22%231a0505%22/><text x=%2250%25%22 y=%2255%25%22 font-size=%2248%22 fill=%22%23d4af37%22 font-family=%22Cinzel,serif%22 text-anchor=%22middle%22>DEADLOCK</text></svg>";' />
         </div>
       </div>
     </div>
@@ -68,7 +76,7 @@
   <section id="features" class="features">
     <div class="container">
       <h2 class="section-title">What You'll Experience</h2>
-      
+
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon">Icon</div>
@@ -114,7 +122,7 @@
     <div class="container">
       <h2 class="section-title">Playable Races</h2>
       <p class="section-desc">We’re finalizing the most interesting, tactical races in Roblox. Expect asymmetrical strengths, memorable lore, and choices that change how you play.</p>
-      
+
       <div class="races-coming-soon">
         <div class="race-coming-soon-card">
           <h3>Races — Reveals Coming Soon</h3>
@@ -128,7 +136,7 @@
   <section id="combat" class="combat">
     <div class="container">
       <h2 class="section-title">Combat That Feels Powerful</h2>
-      
+
       <div class="combat-grid">
         <div class="combat-card">
           <h3>High-Skill Combos</h3>
@@ -158,7 +166,7 @@
     <div class="container">
       <h2 class="section-title">Promo Codes & Rewards</h2>
       <p class="section-desc">We’ll drop exclusive codes and rewards as we launch. Be on Discord for instant rewards and limited-time drops.</p>
-      
+
       <div class="codes-grid">
         <div class="code-card">
           <div class="code-status">Soon</div>
@@ -187,7 +195,7 @@
     <div class="container">
       <h2>Ready to Claim Your Legend?</h2>
       <p>DEADLOCK is built for players who want weighty choices, brutal combat, and unforgettable moments. Join the ranks now.</p>
-      <a href="https://discord.gg/ru4EJtZaUZ" target="_blank" class="btn btn-primary btn-large">Join Discord — Get Early Access</a>
+      <a href="https://discord.gg/ru4EJtZaUZ" target="_blank" class="btn btn-primary btn-large">Join Discord — Early Access</a>
     </div>
   </section>
 
